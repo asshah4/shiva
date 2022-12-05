@@ -44,7 +44,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Visualilzation of EGM using <code>ggplot</code></h1>
-    <small class="dont-index">Source: <a href="https://github.com/asshah4/rhythm/blob/HEAD/R/egm-plots.R" class="external-link"><code>R/egm-plots.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/asshah4/rhythm/blob/HEAD/R/gg_egm.R" class="external-link"><code>R/gg_egm.R</code></a></small>
     <div class="hidden name"><code>gg_egm.Rd</code></div>
     </div>
 
@@ -53,7 +53,16 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">gg_egm</span><span class="op">(</span><span class="va">data</span>, <span class="va">frequency</span>, <span class="va">channels</span>, time_frame <span class="op">=</span> <span class="cn">NULL</span>, <span class="va">...</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">gg_egm</span><span class="op">(</span></span>
+<span>  <span class="va">data</span>,</span>
+<span>  <span class="va">frequency</span>,</span>
+<span>  <span class="va">channels</span>,</span>
+<span>  time_frame <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  annotation_channel <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  beats <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  intervals <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -76,6 +85,28 @@ the channel label (e.g "CS 1-2") or the recording device/catheter type (e.g
 <dd><p>A time range that should be displaced given in the format
 of a vector with a length of 2. The left value is the start, and right
 value is the end time. This is given in seconds (decimals may be used).</p></dd>
+
+
+<dt>annotation_channel</dt>
+<dd><p>Identifies which of the selected channels will be
+used for annotation. This channel will be used for the analysis of
+intervals, peaks, etc. If NULL, no annotations will be made.</p></dd>
+
+
+<dt>beats</dt>
+<dd><p>A integer vector that represents the indexed beats that should
+be analyzed within the plot. Each beat is indexed as <code>1...n</code> from what is
+within the <strong>time_frame</strong> indicated. For example, if 5 beats are seen,
+<code>beats = c(1, 5)</code> would select the 1st and 5th beat. This can also refer to
+any large deflection that is consistent an EGM.</p></dd>
+
+
+<dt>intervals</dt>
+<dd><p>A integer vector that represents the indexed intervals that
+should be annotated. If NULL, no intervals will be annotated. For example,
+if their are 5 beats, than there are 4 intervals between them that can be
+labeled. They can be referenced by their index, e.g. <code>intervals = c(2)</code> to
+reference the 2nd interval in a 5 beat range.</p></dd>
 
 </dl></div>
 
