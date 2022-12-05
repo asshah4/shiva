@@ -22,6 +22,18 @@
     <loc>/reference/cm.html</loc>
   </url>
   <url>
+    <loc>/reference/gg_egm.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/melt_egm.html</loc>
+  </url>
+  <url>
+    <loc>/reference/read_lspro.html</loc>
+  </url>
+  <url>
+    <loc>/reference/theme_egm.html</loc>
   </url>
 </urlset>
