@@ -19,7 +19,16 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
+    <loc>/reference/add_intervals.html</loc>
+  </url>
+  <url>
     <loc>/reference/cm.html</loc>
+  </url>
+  <url>
+    <loc>/reference/egm-vctrs.html</loc>
+  </url>
+  <url>
+    <loc>/reference/egm.html</loc>
   </url>
   <url>
     <loc>/reference/ggm.html</loc>
@@ -28,10 +37,13 @@
     <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/melt_egm.html</loc>
+    <loc>/reference/new_ggm.html</loc>
   </url>
   <url>
     <loc>/reference/read_lspro.html</loc>
+  </url>
+  <url>
+    <loc>/reference/rhythm-package.html</loc>
   </url>
   <url>
     <loc>/reference/theme_egm.html</loc>
