@@ -31,6 +31,11 @@ find_wfdb_software <- function() {
 		}
 	}
 
+	# TODO
+	# Add checks for WFDB software
+	# 	- Check for WFDB on path
+	# 	- Check to see if WFDB will work with sample dataset (using `wfdbdesc`)
+
 	# Return path if exists already
 	op
 
